@@ -13,4 +13,12 @@ end
 def take_a_number(array, person_joining)
   array << person_joining
     puts "Welcome, #{person_joining}. You are number #{array.length} in line."
-end 
+end
+
+def now_serving(array)
+  if array.length == 0 
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array.shift}."
+  end
+end
